@@ -23,8 +23,6 @@ h
 8src/main/java/vn/phat/services/impl/TestServiceImpl.java,8/e/8e4f7066e99e4f6ab393ae123aa1aece45a38bc6
 S
 #src/test/java/vn/phat/PhatTest.java,b/5/b5df59f492937ddf7a49a1ffa7650044917eef53
-A
-db-interactor.iml,7/7/776f11e10a99647f6fd39874626d1a2259f66cbf
 <
 .factorypath,2/9/291674f484b4fb856478f72b85c844a725bc7d66
 g
@@ -54,3 +52,15 @@ V
 &src/main/resources/application-dev.yml,9/5/95f6363b92881afcf55ed87e1b26a2bdb2374dc6
 Y
 )src/main/resources/application.properties,0/6/06f65155ec73600b9fc5c4dc2883d4bb84d8e284
+l
+<src/main/java/vn/phat/repositories/BaseCustomRepository.java,e/2/e26b6ddb28de4023b57e880ccf9da34bd6d699d1
+\
+,src/main/java/vn/phat/dto/BaseCondition.java,b/9/b9cbfd8f5e18c78d5e471263966d77aa5e0bd894
+l
+<src/main/java/vn/phat/repositories/BaseSearchRepository.java,9/8/983e3a32e8c360bb48c64160f127edbbaeee6fa1
+t
+Dsrc/main/java/vn/phat/repositories/impl/BaseSearchRepositoryImp.java,0/b/0bce652e42b1c52112e8cdd0db74079af8c11285
+f
+6src/main/java/vn/phat/repositories/BaseRepository.java,7/a/7addf6be6dfa061d624b6eb6c0ddc01822236586
+u
+Esrc/main/java/vn/phat/repositories/impl/BaseSearchRepositoryImpl.java,5/e/5e2cbaa5a7b4243c60cae644e52ad30a4ce89a5d

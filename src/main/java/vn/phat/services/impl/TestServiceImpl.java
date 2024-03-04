@@ -39,6 +39,6 @@ public class TestServiceImpl extends BaseServiceImpl<Long, String, TestCondition
     }
 
     public List<TestEntity> getFromCriterialQuery(TestCondition condition){
-        return getRepository().testCriteriaQuery(condition);
+        return getRepository().criteriaQuery(condition);
     }
 }

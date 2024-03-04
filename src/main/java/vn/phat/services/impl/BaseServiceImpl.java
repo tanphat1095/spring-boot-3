@@ -8,6 +8,7 @@ import vn.phat.services.BaseService;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public abstract class BaseServiceImpl<I extends Serializable, A extends Serializable, C, E extends EntityAbstract<I, A>, R extends JpaRepository<E, I>>
         implements BaseService<I, A, C, E> {
@@ -31,6 +32,12 @@ public abstract class BaseServiceImpl<I extends Serializable, A extends Serializ
     public E save(E en) {
         updateModifiedInfo(en);
         return getRepository().save(en);
+    }
+
+    @Override
+    public List<E> saveAll(Iterable<E> ens) {
+        ens.forEach(this::updateModifiedInfo);
+        return getRepository().saveAll(ens);
     }
 
     void updateModifiedInfo(E en){

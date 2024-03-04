@@ -10,7 +10,7 @@ import vn.phat.dto.TestCondition;
 import vn.phat.entites.TestEntity;
 
 @Repository
-public interface TestRepository extends JpaRepository<TestEntity, Long>, TestCustomRepository {
+public interface TestRepository extends JpaRepository<TestEntity, Long>, TestCustomRepository{
 
     @Query(value = "SELECT * FROM TEST WHERE NAME LIKE %:#{#condition.name}%"
             , nativeQuery = true)
