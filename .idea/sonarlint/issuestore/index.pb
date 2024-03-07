@@ -66,3 +66,5 @@ u
 Esrc/main/java/vn/phat/repositories/impl/BaseSearchRepositoryImpl.java,5/e/5e2cbaa5a7b4243c60cae644e52ad30a4ce89a5d
 u
 Esrc/main/java/vn/phat/repositories/impl/BaseMasterRepositoryImpl.java,f/0/f0bc6d283ab22bede78cf9b403c5d40fac082c87
+l
+<src/main/java/vn/phat/repositories/BaseMasterRepository.java,3/5/35517eff6a6e5d6804ae6a6c157ba17d54a8c5fc
