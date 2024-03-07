@@ -10,6 +10,7 @@ import vn.phat.dto.TestCondition;
 import vn.phat.entites.TestEntity;
 import vn.phat.services.TestService;
 
+import java.util.ArrayList;
 import java.util.function.Supplier;
 
 @SpringBootTest
@@ -48,6 +49,7 @@ class PhatTest {
     void searchTest(){
         TestCondition condition = new TestCondition();
         condition.setName("");
+        condition.setCondition(new ArrayList<>());
         long start = System.currentTimeMillis();
         PageWrapper<TestEntity> result = testService.search(condition, 50, 100);
         long took = System.currentTimeMillis() - start;
