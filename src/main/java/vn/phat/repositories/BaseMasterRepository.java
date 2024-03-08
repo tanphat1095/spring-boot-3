@@ -10,7 +10,7 @@ import vn.phat.dto.BaseCondition;
 import java.io.Serializable;
 
 @NoRepositoryBean
-public interface BaseMasterRepository<E, I extends Serializable, C extends BaseCondition> extends JpaRepository<E, I> {
+public interface BaseMasterRepository<E, I extends Serializable, U extends Enum<U>, C extends BaseCondition<U>> extends JpaRepository<E, I> {
 
     Page<E> criteriaQuery(C condition, Pageable pageable);
 }

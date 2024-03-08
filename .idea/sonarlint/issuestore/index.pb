@@ -68,3 +68,11 @@ u
 Esrc/main/java/vn/phat/repositories/impl/BaseMasterRepositoryImpl.java,f/0/f0bc6d283ab22bede78cf9b403c5d40fac082c87
 l
 <src/main/java/vn/phat/repositories/BaseMasterRepository.java,3/5/35517eff6a6e5d6804ae6a6c157ba17d54a8c5fc
+]
+-src/main/java/vn/phat/enumdef/EnumMethod.java,c/5/c5b3b2c3148b587c9a57eae46961693a2a217116
+b
+2src/main/java/vn/phat/enumdef/EnumFieldSearch.java,d/6/d67089750e8b7aa291b5e7de51fe663ae2c70458
+_
+/src/main/java/vn/phat/util/ConvertNameUtil.java,a/8/a86f5ef0f31f0296895e40cb0e715ae8c8853cfa
+a
+1src/main/java/vn/phat/enumdef/TestSearchEnum.java,6/0/60cc4e9f26da960cead069dcb3b7823713b6ed10

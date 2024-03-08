@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public abstract class BaseServiceImpl<I extends Serializable, A extends Serializable, C extends BaseCondition, E extends EntityAbstract<I, A>, R extends BaseMasterRepository<E, I, C>>
+public abstract class BaseServiceImpl<I extends Serializable, A extends Serializable, U extends Enum<U>, C extends BaseCondition<U>, E extends EntityAbstract<I, A>, R extends BaseMasterRepository<E, I, U, C>>
         implements BaseService<I, A, C, E> {
 
     abstract R getRepository();

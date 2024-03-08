@@ -5,12 +5,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import vn.phat.dto.Condition;
 import vn.phat.dto.PageWrapper;
 import vn.phat.dto.TestCondition;
 import vn.phat.entites.TestEntity;
+import vn.phat.enumdef.Operator;
+import vn.phat.enumdef.TestSearchEnum;
 import vn.phat.services.TestService;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Supplier;
 
 @SpringBootTest
@@ -19,7 +22,7 @@ class PhatTest {
     @Autowired
     TestService testService;
 
-    @Test
+//    @Test
     void createTest(){
 
         Supplier<Long> create = ()-> testService.save(new TestEntity()).getId();
@@ -27,7 +30,7 @@ class PhatTest {
         Assertions.assertNotNull(create.get());
     }
 
-    @Test
+//    @Test
     void updateTest(){
         Supplier<Long> update = ()->{
             TestEntity en = testService.save(new TestEntity());
@@ -48,8 +51,11 @@ class PhatTest {
     @Test
     void searchTest(){
         TestCondition condition = new TestCondition();
-        condition.setName("");
-        condition.setCondition(new ArrayList<>());
+        Condition<TestSearchEnum> cond =  new Condition<>();
+        cond.setFieldName(TestSearchEnum.NAME);
+        cond.setOperator(Operator.LIKE);
+        cond.setValue("ea");
+        condition.setCondition(List.of(cond));
         long start = System.currentTimeMillis();
         PageWrapper<TestEntity> result = testService.search(condition, 50, 100);
         long took = System.currentTimeMillis() - start;

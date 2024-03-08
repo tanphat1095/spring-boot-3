@@ -7,6 +7,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class BaseCondition {
-    List<Condition> condition;
+public class BaseCondition<E extends Enum<E>> {
+    private List<Condition<E>> condition;// condition and
+    private String keySearch; // condition or
 }
