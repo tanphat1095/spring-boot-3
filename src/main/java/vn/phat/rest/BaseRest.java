@@ -17,6 +17,12 @@ import vn.phat.services.BaseService;
 import java.io.Serializable;
 import java.util.Locale;
 
+
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 @Slf4j
 public abstract class BaseRest<I extends Serializable, A extends  Serializable, U extends Enum<U>, C extends BaseCondition<U>,E extends EntityAbstract<I,A>> {
 

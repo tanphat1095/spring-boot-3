@@ -1,5 +1,10 @@
 package vn.phat.util;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 public class ConvertNameUtil {
     private ConvertNameUtil(){}
 

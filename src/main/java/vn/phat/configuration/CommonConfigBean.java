@@ -7,6 +7,11 @@ import org.springframework.context.annotation.Configuration;
 
 import java.text.SimpleDateFormat;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 @Configuration
 public class CommonConfigBean {
 

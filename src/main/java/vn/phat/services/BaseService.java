@@ -7,6 +7,11 @@ import vn.phat.entites.EntityAbstract;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 public interface BaseService<U extends Enum<U> ,I extends Serializable, A extends Serializable ,C extends BaseCondition<U>, E extends EntityAbstract<I, A>> {
     PageWrapper<E> search(C condition, int page, int pageSize);
     E findOne(I id);

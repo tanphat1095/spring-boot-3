@@ -1,5 +1,10 @@
 package vn.phat.constant;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 public class AppConstant {
 
     private AppConstant(){}

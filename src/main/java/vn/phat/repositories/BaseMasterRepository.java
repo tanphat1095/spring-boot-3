@@ -9,6 +9,11 @@ import vn.phat.dto.BaseCondition;
 
 import java.io.Serializable;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 @NoRepositoryBean
 public interface BaseMasterRepository<E, I extends Serializable, U extends Enum<U>, C extends BaseCondition<U>> extends JpaRepository<E, I> {
 

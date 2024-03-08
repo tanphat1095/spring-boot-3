@@ -18,6 +18,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
+/**
+ *
+ * @author phatle
+ * @since 09/03/2024
+ */
 
 public class BaseMasterRepositoryImpl<E, I extends Serializable, U extends Enum<U>, C extends BaseCondition<U>> extends SimpleJpaRepository<E, I> implements BaseMasterRepository<E, I, U, C> {
 
