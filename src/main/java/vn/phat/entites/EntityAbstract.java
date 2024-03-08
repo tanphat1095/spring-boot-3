@@ -21,4 +21,5 @@ public interface EntityAbstract<I extends Serializable, A extends Serializable> 
     void setDeletedBy(A deletedBy);
 
     void setDeletedFlag(boolean deletedFlag);
+
 }

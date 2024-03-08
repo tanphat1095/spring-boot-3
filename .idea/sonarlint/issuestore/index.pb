@@ -76,3 +76,9 @@ _
 /src/main/java/vn/phat/util/ConvertNameUtil.java,a/8/a86f5ef0f31f0296895e40cb0e715ae8c8853cfa
 a
 1src/main/java/vn/phat/enumdef/TestSearchEnum.java,6/0/60cc4e9f26da960cead069dcb3b7823713b6ed10
+X
+(src/main/java/vn/phat/rest/BaseRest.java,1/5/150057b889d3d01f3d1ded00152af2d2911543a9
+_
+/src/main/java/vn/phat/constant/UrlConstant.java,d/f/df146a49cdf38e892d1aba78c73aaba3e5b4dad5
+_
+/src/main/java/vn/phat/constant/AppConstant.java,d/2/d229c2ea4df46e18197bf971ebdb32799f7c7eb3

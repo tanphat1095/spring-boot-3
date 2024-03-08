@@ -15,6 +15,7 @@ public class CommonConfigBean {
         ObjectMapper objectMapper = new ObjectMapper();
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         objectMapper.setDateFormat(sf);
+
         return objectMapper;
     }
 }
