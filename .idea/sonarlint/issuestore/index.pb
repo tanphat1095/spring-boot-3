@@ -84,3 +84,6 @@ _
 /src/main/java/vn/phat/constant/AppConstant.java,d/2/d229c2ea4df46e18197bf971ebdb32799f7c7eb3
 [
 +src/main/java/vn/phat/enumdef/Operator.java,1/b/1b18997455432c2efd1f650d867eac826ef0705a
+:
+
+Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
