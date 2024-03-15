@@ -3,9 +3,9 @@ package vn.phat.rest;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
-import jakarta.validation.Validator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.*;
 import vn.phat.constant.AppConstant;
 import vn.phat.dto.BaseCondition;
@@ -54,7 +54,7 @@ public abstract class BaseRest<I extends Serializable, A extends  Serializable, 
         long start = System.currentTimeMillis();
         try {
             if(getValidator() != null)
-                getValidator().validate(data, getClassEntity());
+                getValidator().validate(data, result);
             if(result.hasErrors()){
                 return new BaseRes<>(null, start);
             }
