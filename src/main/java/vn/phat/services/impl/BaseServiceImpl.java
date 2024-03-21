@@ -9,7 +9,7 @@ import vn.phat.repositories.BaseMasterRepository;
 import vn.phat.services.BaseService;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -46,7 +46,7 @@ public abstract class BaseServiceImpl<I extends Serializable, A extends Serializ
 
     void updateModifiedInfo(E en){
         I id = en.getId();
-        Date now = new Date();
+        LocalDateTime now = LocalDateTime.now();
         A author = getAuthor();
         if(id == null){
             en.setCreatedDate(now);
@@ -72,7 +72,7 @@ public abstract class BaseServiceImpl<I extends Serializable, A extends Serializ
         if(en == null) throw new NullPointerException("Cannot find entity");
         en.setDeletedBy(getAuthor());
         en.setDeletedFlag(true);
-        en.setDeletedDate(new Date());
+        en.setDeletedDate(LocalDateTime.now());
         getRepository().save(en);
     }
 

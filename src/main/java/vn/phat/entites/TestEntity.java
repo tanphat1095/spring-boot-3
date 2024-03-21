@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Getter
@@ -22,9 +22,9 @@ public class TestEntity implements EntityAbstract<Long, String> {
     private String updatedBy;
     private String deletedBy;
 
-    private Date createdDate;
-    private Date updatedDate;
-    private Date deletedDate;
+    private LocalDateTime createdDate;
+    private LocalDateTime updatedDate;
+    private LocalDateTime deletedDate;
 
     private boolean deletedFlag;
 
